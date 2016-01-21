@@ -1,0 +1,43 @@
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title>Cookstage</title> <meta name="description" content=""> 
+<meta name="author" content="Jorge Olivas Agudo">
+<meta name="description" content="Portal de búsqueda de empresas para prácticas en cocina, seas tanto un estudiante en busca de formacion como una empresa en busca de estudiantes para formar">
+<meta name="keywords" content="cookstage empleo cocina portal practicas fp formacion profesional">
+<meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.da2a2bde.css"> <link rel="stylesheet" href="styles/main.2af8cec7.css">  
+<link rel="stylesheet" href="styles/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" href="styles/font-awesome/css/font-awesome.css">
+<body ng-app="cookstageApp"> <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <!-- Add your site or application content here --> <div class="header"> <nav class="navbar navbar-custom navbar-fixed-top" role="navigation"> <!-- Brand and toggle get grouped for better mobile display --> <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <!-- <img src="/images/logoempresa.9633e61c.gif" alt="Logo empresa" height="100px" width="100px" style="padding: 0 !important;"> --> <span class="icon-bar" src="../images/logoempresa.gif"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="" onclick="" id="showNavBar"><img class="" src="images/logoempresa.9633e61c.gif" alt="Logo empresa" height="50px" width="50px"></a> <a class="navbar-brand" href="#/" onclick="">Cookstage</a> </div> <!-- Collect the nav links, forms, and other content for toggling --> <div class="collapse navbar-collapse navbar-ex1-collapse"> <ul class="nav navbar-nav"> <li class=""><a href="#/">Home</a></li> <li><a href="#/stager">¿Qué es un stager?</a></li> <li><a ng-href="#/bolsaempleo">Bolsa de empleo</a></li> <li><a ng-href="#/noticias">Noticias</a></li> <li><a ng-href="#/contacto">Contacto</a></li> <li class="dropdown"> <a href="" class="dropdown-toggle" data-toggle="dropdown">Log In <b class="caret"></b></a> <ul class="dropdown-menu" id="login-dp"> <li><a href="#/login">Acceso Stager</a></li> <li><a href="#/empresas">Acceso Empresa</a></li> <!-- fin del login --> </ul> </li> </ul> <form class="navbar-form navbar-left" role="search"> <div class="form-group"> <input type="text" class="form-control" placeholder="Buscar ofertas..." onfocus="this.value=''" onblur="if(this.value=='') this.value='Buscar ofertas...'"> <a href="#/bolsaempleo"><span class="btn btn-default glyphicon glyphicon-search"></span></a> </div> </form> <!-- social --> <!-- <ul class=" nav navbar-nav" style="">
+      <li class=""><a class="btn btn-social-icon btn-lg btn-facebook" target="_blank" href="http://facebook.com"><i class="fa fa-facebook"></i></a></li>
+      <li class=""><a class="btn btn-social-icon btn-lg btn-twitter" target="_blank" href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+      <li class=""><a class="btn btn-social-icon btn-lg btn-instagram" target="_blank" href="http://instagram.com"><i class="fa fa-instagram"></i></a></li>
+      <li class=""><a class="btn btn-social-icon btn-lg btn-google" target="_blank" href="http://google.com"><i class="fa fa-google"></i></a></li>
+      <li class=""><a class="btn btn-social-icon btn-lg btn-tumblr" target="_blank" href="http://tumblr.com"><i class="fa fa-tumblr"></i></a></li>
+    </ul> --> <!-- /social --> </div><!-- /.navbar-collapse --> </nav> </div> <!-- aqui empieza --> <div id="sidebar-wrapper" class=""> <ul class="sidebar-nav"> <li class="sidebar-brand"> <a>Búsqueda...</a> </li> <li><input type="text" class="form-control" placeholder="Búscar palabra clave..."></li> <li> <div style="width: 100% !important"> <select class="selectpicker pull-left" multiple title="Selecciona la ciudad"> <!-- .form-control --> <option>España... <option>Madrid <option>Barcelona <option>Valencia <option>Bilbao </select> </div> </li> <li> <div style="width: 100% !important"> <select class="selectpicker pull-left" multiple title="Tipo de cocina"> <!-- .form-control --> <option>Autor <option>Autonómica <option>Fusión </select> </div> </li> <li> <input type="number" class="form-control" min="0" step="100" max="4000" placeholder="Salario" style="float: left;"> </li> <li> <a href="#/bolsaempleo"><button type="button" class="btn btn-info btn-block" style="float: left;">¡Buscar!</button></a> </li> </ul> </div> <!-- aqui acaba --> <div class="" style="min-height: 900px; padding-bottom: 82px;"> <!-- .container !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--> <div ng-view="" class="container {{clase}}"></div> </div> <div class="footer" id="foot"> <!--fixed?--> <div class="" style="padding-top: 0"> <div class="pull-right" style="margin-right: 5px"> <span class="glyphicon glyphicon-copyright-mark"></span> cookstage team </div> <!-- <div class="row" >
+          <div class="col-md-2">
+            <ul title="Partners" style="list-style: none; display: inline;">
+              <li>ACYR</li>
+              <li>ARCOS</li>
+              <li>CANAL COCINA</li>
+              <li>MAKRO</li>
+            </ul>            
+          </div>
+        </div> --> <ul class="nav navbar-nav" style="margin: 2px 0 2px 2px"> <!-- margin: 2px 0 2px 2px; --> <li class="" style="float: left"><a class="btn btn-social-icon btn-s btn-facebook" target="_blank" href="http://facebook.com"><i class="fa fa-facebook"></i></a></li> <li class="" style="float: left"><a class="btn btn-social-icon btn-s btn-twitter" target="_blank" href="http://twitter.com"><i class="fa fa-twitter"></i></a></li> <li class="" style="float: left"><a class="btn btn-social-icon btn-s btn-instagram" target="_blank" href="http://instagram.com"><i class="fa fa-instagram"></i></a></li> <li class="" style="float: left"><a class="btn btn-social-icon btn-s btn-google" target="_blank" href="http://google.com"><i class="fa fa-google"></i></a></li> <li class="" style="float: left"><a class="btn btn-social-icon btn-s btn-tumblr" target="_blank" href="http://tumblr.com"><i class="fa fa-tumblr"></i></a></li> </ul> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <script src="scripts/vendor.8035430d.js"></script> <script src="scripts/scripts.7d85c63f.js"></script>
+               <script>
+          $(document).ready(function(){
+            $('#showNavBar').click(function(event) {
+              $('#sidebar-wrapper').toggle(function() {
+                /* Stuff to do every *odd* time the element is clicked */
+              }, function() {
+                /* Stuff to do every *even* time the element is clicked */
+              });
+              
+            });
+          });
+        </script>
